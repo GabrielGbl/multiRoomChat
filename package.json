@@ -16,5 +16,11 @@
     "express-validator": "^3.2.1",
     "nodemon": "^1.11.0",
     "socket.io": "^2.0.3"
+  },
+  "engines":{
+    "node" : "8.2.1"
+  },
+  "scripts":{
+    "start": "node app"
   }
 }

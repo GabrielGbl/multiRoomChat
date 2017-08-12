@@ -1,8 +1,9 @@
 const application = require('./config/server');
 
-var server = application.listen(3000, function(){
-	console.log('SERVER ON');
-});
+
+const port = process.env.PORT || 3000;
+
+const server = application.listen(port);
 
 const io = require('socket.io').listen(server);
 
@@ -11,10 +12,7 @@ application.set('io', io);
 
 io.on('connection', function(socket){	
 
-	console.log("Usuario conectado!");
-
 	socket.on('disconnect', function(){
-		console.log("Usuario desconectado!");
 		let msg="usuário desconectou!";
 		socket.broadcast.emit('msgUsuarioDesconectou', {mensagem:msg});
 	});
