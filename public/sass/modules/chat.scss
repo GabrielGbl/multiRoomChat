@@ -1,0 +1,62 @@
+.conversa{
+	margin:85px 0;	
+	height:auto;
+	
+	.alert h4{
+		display:inline;
+		font-weight:bold;
+	}
+
+	.dialogo{
+		width:100%;
+		height:auto;
+		padding:15px;
+		margin:15px 0;
+		background:$cor-secundaria;
+		@include border-radius(5px);
+		line-height: 1.7;
+		
+		
+		h4{
+			font-weight: bold;
+			font-size:1.1em;
+			color:lighten($cor-letras,10%);
+		}
+
+		p{
+			padding-left:15px;
+			color:lighten($cor-letras,20%);
+			word-wrap: break-word; 
+		}
+	
+	}
+}
+
+.participantes{
+	margin:85px 0;	
+
+	.participante{
+		display:block;
+		width:50%;
+		padding:15px;
+		margin:15px;
+		background:$cor-secundaria;
+		@include border-radius(5px);
+		
+		h4{
+			margin:7px;
+			display:inline;
+			font-weight:bold;
+		}
+	}
+}
+
+.painel-mensagem{
+	background:$cor-primaria;
+	height:90px;
+
+	.enviar-mensagem{
+		padding:25px 0;
+		height:80px;
+	}	
+}

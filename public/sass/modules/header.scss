@@ -1,0 +1,74 @@
+*{
+	margin:0;
+	padding:0;
+	@include box-sizing(border-box);
+	@include box-sizing(padding-box);
+}
+
+@include font-face("Bebas-Neue", font-files("bebas-neue/BebasNeue.otf"));
+
+html, body{
+	height:100%;
+	min-height: 100%;
+}
+
+body{
+	font:{
+		size:1em;
+		family:Arial;
+	}
+	background:lighten($cor-primaria,25%);
+}
+
+.navbar{
+	height:70px;
+}
+
+.navbar-inverse{
+	border-radius:0;
+	border:none;
+	background:$cor-primaria;
+	
+
+	.navbar-toggle{
+		margin-top:16px;
+	}
+
+	.navbar-collapse, .navbar-toggle{
+		border-color:$cor-secundaria;
+	}
+
+	.navbar-collapse {
+		background:$cor-primaria;
+	}
+
+
+	.navbar-toggle:focus, .navbar-toggle:hover{
+		background:darken($cor-primaria,25%);
+	}
+
+	
+	.navbar-brand{	
+		padding:5px 25px;
+		margin:0 15px;
+	}
+
+	.navbar-header{
+		height:70px;
+	}
+
+	.navbar-nav li > a{
+		height:70px;
+		padding-top:25px;
+		color:$cor-secundaria;
+		font:{
+			family:Bebas-Neue;
+			size:1.4em;
+		}
+		&:hover{
+			color:darken($cor-primaria,25%);	
+		}
+	}
+
+
+}

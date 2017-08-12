@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+		
+	<% include partials/head %>
+	<body>
+		
+		<% include partials/header %>
+
+		<div class="container">
+			<div class="row col-lg-12 conversa" id="conversa"></div>
+
+			<div class="row col-lg-12 participantes" id="participantes" style="display: none">
+				
+			</div>
+
+		</div>
+
+		<nav class="navbar navbar-inverse navbar-fixed-bottom painel-mensagem" role="navigation">
+			<div class="container">
+				<section class="enviar-mensagem">
+						<div class="input-group">
+							<input type="text" id="mensagem" class="form-control" placeholder="Mensagem">
+							<input type="hidden" id="nome" value="<%= dadosForm.usu_nome %>" >
+							<input type="hidden" id="nome_atualizado_clientes" value="0">
+							<span class="input-group-btn">
+								<button type="button" id="enviar-mensagem" class="btn btn-default">></button>
+							</span>
+						</div>
+				</section>
+			</div>
+		</nav>
+	
+	<script src="javascripts/script-socket.io.js"></script>
+
+	</body>
+</html>

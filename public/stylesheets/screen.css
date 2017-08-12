@@ -1,0 +1,220 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+html {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+q, blockquote {
+  quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+a img {
+  border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -moz-box-sizing: padding-box;
+  -webkit-box-sizing: padding-box;
+  box-sizing: padding-box;
+}
+
+@font-face {
+  font-family: "Bebas-Neue";
+  src: url('/fonts/bebas-neue/BebasNeue.otf') format('opentype');
+}
+html, body {
+  height: 100%;
+  min-height: 100%;
+}
+
+body {
+  font-size: 1em;
+  font-family: Arial;
+  background: #b8e2f4;
+}
+
+.navbar {
+  height: 70px;
+}
+
+.navbar-inverse {
+  border-radius: 0;
+  border: none;
+  background: #49b5e3;
+}
+.navbar-inverse .navbar-toggle {
+  margin-top: 16px;
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-toggle {
+  border-color: #FFF;
+}
+.navbar-inverse .navbar-collapse {
+  background: #49b5e3;
+}
+.navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover {
+  background: #177096;
+}
+.navbar-inverse .navbar-brand {
+  padding: 5px 25px;
+  margin: 0 15px;
+}
+.navbar-inverse .navbar-header {
+  height: 70px;
+}
+.navbar-inverse .navbar-nav li > a {
+  height: 70px;
+  padding-top: 25px;
+  color: #FFF;
+  font-family: Bebas-Neue;
+  font-size: 1.4em;
+}
+.navbar-inverse .navbar-nav li > a:hover {
+  color: #177096;
+}
+
+.login-container {
+  height: 100%;
+  min-height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  background: #49b5e3;
+}
+.login-container .login-panel {
+  width: auto;
+  min-width: 300px;
+  height: auto;
+  padding: 25px;
+  background: #FFF;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.login-container .login-panel .page-header {
+  margin: 7px 0;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: #313131;
+}
+.login-container .login-panel img {
+  display: block;
+  width: auto;
+  height: auto;
+  margin: 15px auto;
+}
+.login-container .login-panel .alert {
+  padding: 7px;
+}
+.login-container .login-panel .alert-danger ul > li {
+  margin: 7px;
+  padding: 0;
+}
+
+.conversa {
+  margin: 85px 0;
+  height: auto;
+}
+.conversa .alert h4 {
+  display: inline;
+  font-weight: bold;
+}
+.conversa .dialogo {
+  width: 100%;
+  height: auto;
+  padding: 15px;
+  margin: 15px 0;
+  background: #FFF;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  line-height: 1.7;
+}
+.conversa .dialogo h4 {
+  font-weight: bold;
+  font-size: 1.1em;
+  color: #4b4b4b;
+}
+.conversa .dialogo p {
+  padding-left: 15px;
+  color: #646464;
+  word-wrap: break-word;
+}
+
+.participantes {
+  margin: 85px 0;
+}
+.participantes .participante {
+  display: block;
+  width: 50%;
+  padding: 15px;
+  margin: 15px;
+  background: #FFF;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+}
+.participantes .participante h4 {
+  margin: 7px;
+  display: inline;
+  font-weight: bold;
+}
+
+.painel-mensagem {
+  background: #49b5e3;
+  height: 90px;
+}
+.painel-mensagem .enviar-mensagem {
+  padding: 25px 0;
+  height: 80px;
+}

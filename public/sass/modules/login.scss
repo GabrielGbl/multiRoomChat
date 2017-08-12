@@ -1,0 +1,46 @@
+
+.login-container{
+	height:100%;
+	min-height:100%;
+	@include display-flex;
+    @include align-items(center);
+    @include justify-content(center);
+	background:$cor-primaria;
+	
+	.login-panel{
+		width:auto;
+		min-width:300px;
+		height:auto;
+		padding:25px;		
+		background:$cor-secundaria;
+		@include border-radius(5px);
+		
+		.page-header{
+			margin:7px 0;
+			text-align: center;
+			font:{
+				size:2em;
+				weight:bold;
+			}
+			color:$cor-letras;
+		}
+
+		img{
+			display:block;
+			width:auto;
+			height:auto;
+			margin:15px auto;
+		}
+
+		.alert{
+			padding:7px;
+		}
+
+		.alert-danger ul > li{
+			margin:7px;
+			padding:0;
+		}
+	}
+
+		
+}

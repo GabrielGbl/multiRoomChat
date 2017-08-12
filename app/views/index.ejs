@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>	
+	<% include partials/head %>
+	<body>
+		
+	<div class="container-fluid login-container">		
+			<section class="login-panel">
+				<section class="page-header">
+					<h1>MultiRoomChat!</h1>
+				</section>				
+
+				<img src="images/img-login.png" alt="logo multiRoomChat">			
+
+				<form action="/chat" method="POST" accept-charset="utf-8">
+					<div class="form-group">
+					    <input type="text" class="form-control form-control-lg" id="usu_nome" name="usu_nome" placeholder="Digite o seu nome" required>
+					</div>		
+					<% if(validacao.length > 0 ){ %>
+					<div class="alert alert-danger">						
+						<ul>
+							<% validacao.forEach(function(erro){ %>	
+								<li><%= erro.msg %></li>							
+							<% }); %>						
+						</ul>
+					</div>	
+					<%  } %>					
+										
+				  <button type="submit" class="btn btn-success btn-block">Entrar</button>
+				</form>
+			</section>		
+	</div>
+
+	</body>
+</html>
