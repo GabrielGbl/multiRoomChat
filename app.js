@@ -2,9 +2,9 @@ const application = require('./config/server');
 
 var porta = process.env.PORT;
 
-application.listen(porta);
-console.log(porta);
-const server = application.listen(porta);
+var server = application.listen(porta, function(){
+	console.log('SERVER ON');
+});
 
 const io = require('socket.io').listen(server);
 
