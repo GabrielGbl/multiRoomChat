@@ -1,6 +1,6 @@
 const application = require('./config/server');
 
-var porta = process.env.PORT || 3000;
+var porta = process.env.PORT;
 
 const server = application.listen(porta);
 
