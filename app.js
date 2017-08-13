@@ -1,9 +1,6 @@
 const application = require('./config/server');
 
-
-const port = process.env.PORT || 3000;
-
-const server = application.listen(port);
+const server = application.listen(3000);
 
 const io = require('socket.io').listen(server);
 

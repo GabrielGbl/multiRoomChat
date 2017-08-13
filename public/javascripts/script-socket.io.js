@@ -1,4 +1,4 @@
-const socket = io('https://multiroomchat-nodejs.herokuapp.com/');
+const socket = io('');
 
 $('#enviar-mensagem').click(function(){
 	socket.emit('msgParaServidor',{
