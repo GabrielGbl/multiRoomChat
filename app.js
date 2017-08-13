@@ -1,8 +1,6 @@
 const application = require('./config/server');
 
-var porta = process.env.PORT;
-
-var server = application.listen(porta, function(){
+const server = application.listen(3000, function(){
 	console.log('SERVER ON');
 });
 
