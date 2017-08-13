@@ -1,1 +1,1 @@
-Projeto desenvolvimento com intuito de estudo e aprendizado das ferramentas Node.js, Express e Socket.io.
+Projeto desenvolvimento com intuito de estudo e aprendizagem das ferramentas Node.js, Express e Socket.io.
