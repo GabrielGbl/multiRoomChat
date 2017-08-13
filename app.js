@@ -6,7 +6,6 @@ const server = application.listen(porta);
 
 const io = require('socket.io').listen(server);
 
-//Criar variaveis no objeto do servidor
 application.set('io', io);
 
 io.on('connection', function(socket){	
