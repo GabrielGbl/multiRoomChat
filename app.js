@@ -2,8 +2,8 @@ const application = require('./config/server');
 
 var porta = process.env.PORT;
 
+application.listen(porta);
 console.log(porta);
-
 const server = application.listen(porta);
 
 const io = require('socket.io').listen(server);
