@@ -1,4 +1,4 @@
-const socket = io('');
+const socket = io('https://mrc-nodejs.herokuapp.com');
 
 $('#enviar-mensagem').click(function(){
 	socket.emit('msgParaServidor',{
