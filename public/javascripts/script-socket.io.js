@@ -1,6 +1,5 @@
 const socket = io('https://multiroomchat-nodejs.herokuapp.com/');
 
-
 $('#enviar-mensagem').click(function(){
 	socket.emit('msgParaServidor',{
 		nome:$('#nome').val(),
